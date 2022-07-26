@@ -185,7 +185,7 @@ nav .slide {
     font-size: 1.6rem;
     border-bottom: 2px solid #5800FF;
 }
-.content form label input:focus:valid {
+.content form label input:valid {
     font-size: 1.4rem;
     border-bottom: 2px solid green;
     background-color: #e8f0fe;
