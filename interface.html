@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/e412bcf9db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="interface.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN INTERFACE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Login interface</h2>
+
+            <input type="radio" name="tab" id="login" checked>
+            <input type="radio" name="tab" id="register">
+            <input type="radio" name="tab" id="reset">
+
+            <nav>
+                <label for="login" class="login">
+                    <i class="fa-solid fa-right-to-bracket"></i>Login
+                </label>
+                <label for="register" class="register">
+                    <i class="fa-solid fa-user-plus"></i>Register
+                </label>
+                <label for="reset" class="reset">
+                    <i class="fa-solid fa-gears"></i>Reset
+                </label>
+
+                <div class="slide">
+
+                </div>
+            </nav>
+
+            <section>
+                <div class="content content-login">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Sign In</h3>
+
+                    <form action="">
+                        <label for="user">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="user" placeholder="Username" 
+                            autocomplete="off" required>
+                        </label>
+
+                        <label for="password">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" placeholder="Password" 
+                            autocomplete="off" required>
+                        </label>
+
+                        <div class="logged">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="checkbox">Stay Logged in</label>
+                        </div>
+
+                        <button type="button" class="btn">Login</button>
+                    </form>
+                </div>
+
+                <div class="content content-register">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h3>Sign Up</h3>
+
+                    <form action="">
+                        <label for="user">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="user" placeholder="Username" 
+                            autocomplete="off" required>
+                        </label>
+                        <label for="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Email" 
+                            autocomplete="off" required>
+                        </label>
+
+                        <label for="password">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" placeholder="Password" 
+                            autocomplete="off" required>
+                        </label>
+
+                        <button type="button" class="btn">Register</button>
+                    </form>
+                </div>
+
+                <div class="content content-reset">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Reset</h3>
+
+                    <form action="">
+                        <label for="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Email" 
+                            autocomplete="off" required>
+                        </label>
+
+                        <button type="button" class="btn">Reset Password</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </header>
+
+<script src="/interface.js"></script>
+</body>
+</html>
+

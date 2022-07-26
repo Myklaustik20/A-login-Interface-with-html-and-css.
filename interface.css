@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Lato&family=Poppins&family=Roboto&family=Roboto+Serif:opsz@8..144&family=Tiro+Gurmukhi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #A6D1E6, #5800FF);
+    padding: 10rem .5rem;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem 0;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+header h2 {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    color: #273746;
+}
+
+header input[type=radio] {
+    display: none;
+}
+
+header nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .7rem;
+    border: 1px solid #eee;
+    background-color: #EAEDED;
+    z-index: 1;
+}
+
+header nav label {
+    position: relative;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #273746;
+    cursor: pointer;
+}
+
+header nav label i {
+    padding-right: .5rem;
+    color: #5800FF;
+}
+
+nav .slide {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 23%;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: #A6D1E6;
+    border-radius: 3px;
+    z-index: -1;
+    transition: all .3s;
+}
+
+#register:checked ~ nav .slide {
+    left: 38%;
+}
+
+#reset:checked ~ nav .slide {
+    left: 74%;
+}
+
+#login:checked ~ nav .login,
+#register:checked ~ nav .register,
+#reset:checked ~ nav .reset {
+    color: #fff;
+}
+
+.content {
+    display: none;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#login:checked ~ section .content-login {
+    display: block;
+}
+#register:checked ~ section .content-register {
+    display: block;
+}
+#reset:checked ~ section .content-reset {
+    display: block;
+}
+
+.content > i {
+    color: #5800FF;
+    font-size: 2.5rem;
+    border: 2px solid;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.content h3 {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.5;
+    padding: 0 1rem;
+}
+
+.content h3::before {
+    content: "";
+    position: absolute;
+    left: 31%;
+    top: 50%;
+    width: 10%;
+    height: 1px;
+    background-color: #273746;
+    transform: translateY(-50%);
+}
+
+.content h3::after {
+    content: "";
+    position: absolute;
+    right: 31%;
+    top: 50%;
+    width: 10%;
+    height: 1px;
+    background-color: #273746;
+    transform: translateY(-50%);
+}
+
+.content form {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content label {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content form label input {
+    display: block;
+    width: 100%;
+    padding: .9rem 3rem;
+    border: 1px solid transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px 0 10px 0;
+    outline: none;
+    color: #273746;
+    margin-bottom: 1.5rem;
+}
+
+.content form i {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    color: #A6D1E6;
+}
+
+.content form label input:focus:invalid {
+    font-size: 1.6rem;
+    border-bottom: 2px solid #5800FF;
+}
+.content form label input:focus:valid {
+    font-size: 1.4rem;
+    border-bottom: 2px solid green;
+    background-color: #e8f0fe;
+}
+
+::placeholder {
+    color: #273746;
+    font-size: 1.5rem;
+}
+
+.content .logged {
+    display: block;
+    text-align: right;
+    transform: translateY(-1rem);
+    font-size: 1rem;
+    color: #273746;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #A6D1E6;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .2);
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #5800FF;
+}
